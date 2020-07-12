@@ -3,6 +3,9 @@ require "eongering_palindrome/version"
 module EongeringPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
+    if processed_content.empty?
+      false
+    else
     processed_content == processed_content.reverse
   end
 
