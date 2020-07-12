@@ -6,7 +6,8 @@ module EongeringPalindrome
     if processed_content.empty?
       false
     else
-    processed_content == processed_content.reverse
+      processed_content == processed_content.reverse
+    end
   end
 
   private

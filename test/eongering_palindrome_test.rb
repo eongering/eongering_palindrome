@@ -24,4 +24,8 @@ class EongeringPalindromeTest < Minitest::Test
   def test_integer_non_palindrome
     refute 1232.palindrome?
   end
+
+  def test_spaces_non_palindrome
+    refute "   \t ".palindrome?
+  end
 end
